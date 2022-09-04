@@ -4,7 +4,7 @@ function button1(fname = "recent-release", y) {
   if (y === undefined) {
       name = fname;
   }
-      fetch(`https://gogoanime.herokuapp.com/${name}`)
+      fetch(`https://gogoanime.herokuapp.com/${name}?page=2`)
       .then((response) => response.json())
       .then(aniiem);
       function aniiem(data) {
