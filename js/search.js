@@ -37,12 +37,9 @@ fetch(`https://gogoanime.herokuapp.com/search?keyw=${query}`)
 
     }
 
+
 function pageLoaded(){
     const form = document.getElementById('search_form');
     form.addEventListener("submit", searchAnime);
 }
 window.addEventListener("load", pageLoaded);
-
-
-
-
