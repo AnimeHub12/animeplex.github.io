@@ -37,24 +37,11 @@ fetch(`https://gogoanime.herokuapp.com/search?keyw=${query}`)
 
     }
 
-const input = document.querySelector("input");
-const search_btn = document.querySelector(".search")
-search_btn.addEventListener("click",()=>{
-    if(input.value==="")
-    {
-        alert("Please enter the some text")
-        return;
-       
-    }
-    
-    function pageLoaded(){
+function pageLoaded(){
     const form = document.getElementById('search_form');
     form.addEventListener("submit", searchAnime);
 }
 window.addEventListener("load", pageLoaded);
-
-
-})
 
 
 
