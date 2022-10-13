@@ -15,7 +15,7 @@ fetch(`https://gogoanime.herokuapp.com/vidcdn/watch/${epiid}`)
     var url = new URL(url_string);
     var dwid = url.searchParams.get("id");
 
-    fetch(`https://gogoanime.herokuapp.com/streamsb/watch/${epiid}`)
+    fetch(`https://gogoanime.herokuapp.com/vidcdn/watch/${epiid}`)
     .then((response) => response.json())
     .then(aniiem);
 
