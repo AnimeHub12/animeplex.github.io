@@ -31,7 +31,7 @@ function aniiem(anime) {
             <div class="stream">
                 <h3 class="bg-light">Stream </h3>
                 <div class="card">
-                <iframe class="responsive-iframe" src="${anime.Referer}" ></iframe>
+                <iframe class="responsive-iframe" src="${anime.Referer}"></iframe>
             </div>
             </div>
             <nav class="bg-light me-3">
